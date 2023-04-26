@@ -2,7 +2,6 @@ function arrFilter(arr) {
   const numbers = [];
   const strings = [];
   for (const el of arr.flatMap((el) => el)) {
-    console.log(typeof el);
     switch (typeof el) {
       case "number":
         numbers.push(el);
